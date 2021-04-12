@@ -1,0 +1,30 @@
+<div class="sidebar">
+  <ul>
+    <li class="sidebar__item logo">
+      <img src="../assets/livescores-logo-transparent.png" alt="livescores logo">
+    </li>
+    <li class="sidebar__item" (click)="changeSidebarActive('soccer')" [class.sidebar__item-active]="sidebarActive === 'soccer'">
+      <img src="../assets/soccer-ball-grey-2.png" *ngIf="sidebarActive !== 'soccer'" alt="soccer ball" [class.sidebar__item-img-active]="sidebarActive === 'soccer'">
+      <img src="../assets/soccer-ball-orange.png" *ngIf="sidebarActive === 'soccer'" alt="soccer ball" [class.sidebar__item-img-active]="sidebarActive === 'soccer'">
+    </li>
+    <li class="sidebar__item" (click)="changeSidebarActive('basketball')" [class.sidebar__item-active]="sidebarActive === 'basketball'">
+      <img src="../assets/basketball-ball-grey.png" *ngIf="sidebarActive !== 'basketball'" alt="basketball ball" [class.sidebar__item-img-active]="sidebarActive === 'basketball'">
+      <img src="../assets/basketball-ball-orange.png" *ngIf="sidebarActive === 'basketball'" alt="basketball ball" [class.sidebar__item-img-active]="sidebarActive === 'basketball'">
+    </li>
+    <li class="sidebar__item" (click)="changeSidebarActive('american-football')" [class.sidebar__item-active]="sidebarActive === 'american-football'">
+      <img src="../assets/american-football-ball-grey.png" *ngIf="sidebarActive !== 'american-football'" alt="american football ball" [class.sidebar__item-img-active]="sidebarActive === 'american-football'">
+      <img src="../assets/american-football-ball-orange.png" *ngIf="sidebarActive === 'american-football'" alt="american football ball" [class.sidebar__item-img-active]="sidebarActive === 'american-football'">
+    </li>
+    <li class="sidebar__item" (click)="changeSidebarActive('horse-race')" [class.sidebar__item-active]="sidebarActive === 'horse-race'">
+      <img src="../assets/horse-race-grey-2.png" *ngIf="sidebarActive !== 'horse-race'" alt="horse" [class.sidebar__item-img-active]="sidebarActive === 'horse-race'">
+      <img src="../assets/horse-race-orange.png" *ngIf="sidebarActive === 'horse-race'" alt="horse" [class.sidebar__item-img-active]="sidebarActive === 'horse-race'">
+    </li>
+    <li class="sidebar__item" (click)="changeSidebarActive('boxing')" [class.sidebar__item-active]="sidebarActive === 'boxing'">
+      <img src="../assets/boxing-grey.png" *ngIf="sidebarActive !== 'boxing'" alt="boxing gloves" [class.sidebar__item-img-active]="sidebarActive === 'boxing'">
+      <img src="../assets/boxing-orange.png" *ngIf="sidebarActive === 'boxing'" alt="boxing gloves" [class.sidebar__item-img-active]="sidebarActive === 'boxing'">
+    </li>
+  </ul>
+  <div>
+    <img class="logout-img" src="../assets/logout-gray.png" alt="logout">
+  </div>
+</div>

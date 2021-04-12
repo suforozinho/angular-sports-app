@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-futebol-teste';
+
+  activeTab: string = '';
+  infoActiveTab: string = '';
+  extraInfoDisplay: boolean = false;
+
+  changeTab(tabName: string): void {
+    this.activeTab = tabName;
+  }
+
+  changeInfoActiveTab(tabName: string): void {
+    this.infoActiveTab = tabName;
+  }
+
+  viewExtraInfo() {
+    this.extraInfoDisplay = !this.extraInfoDisplay;
+  }
 }

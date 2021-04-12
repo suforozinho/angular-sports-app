@@ -1,0 +1,179 @@
+.content__extra-info {
+  /* width: 40%; */
+  background: #171F36;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* .content__extra-info::-webkit-scrollbar {
+  background: transparent;
+  width: 16px;
+}
+
+.content__extra-info::-webkit-scrollbar-thumb {
+  background: #6d6d6d;
+  border: 5px solid #121830;
+  border-radius: 16px;
+}
+
+.content__extra-info::-webkit-scrollbar-track {
+  border-radius: 16px;
+} */
+
+.content__extra-info__top__close-and-swap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+}
+
+.swap-button {
+  width: 40px;
+  height: 40px;
+  background: #E87C00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swap-button > img {
+  width: 24px;
+}
+
+.content__extra-info__top__teams-score {
+  display: flex;
+  justify-content: center;
+}
+
+.teams-score__team {
+  display: flex;
+  align-items: center;
+}
+
+.teams-score__score {
+  display: flex;
+  font-size: 56px;
+  align-items: center;
+  background: rgba(29, 40, 62, 0.7);
+  border-radius: 39px;
+  padding: 10px 34px;
+  margin: 0 35px;
+}
+
+.some-number {
+  font-size: 22px;
+  margin: 0px 32px;
+}
+
+.teams-score__team > img {
+  width: 78px;
+}
+
+.content__extra-info__top__teams-name {
+  display: flex;
+  justify-content: center;
+  padding: 6px 0;
+  border-top: 2px solid #103961;
+  margin-top: 21px;
+  border-bottom: 2px solid #103961;
+}
+
+.team-name {
+  width: 100%;
+  text-align: center;
+}
+
+.team-name-x {
+  margin: 0 87px;
+  color: #103961;
+  font-size: 16px;
+}
+
+.content__extra-info__top__stadium-league {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.stadium-league__stadium {
+  border-bottom: 2px solid #103961;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.stadium-league__league {
+  padding: 8px;
+  font-size: 13px;
+}
+
+.close-button {
+  width: 29px;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+.content__extra-info__bottom {
+  margin-top: 15px;
+}
+
+.content__extra-info__bottom__navbar {
+  background: #1C233A;
+  color: #5a6278;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 27px;
+}
+
+.content__extra-info__bottom__navbar > div {
+  padding: 8px 12px;
+}
+
+.content__extra-info__bottom__navbar > div:hover {
+  cursor: pointer;
+}
+
+.extra-info-tab-active {
+  color: #EB8F26;
+  border-bottom: 2px solid #EB8F26;
+}
+
+.content__extra-info__bottom__stats {
+  margin-top: 16px;
+  color: #5a6278;
+  display: flex;
+  justify-content: center;
+}
+
+.stats__column {
+  font-size: 13px;
+}
+
+.stats__column__numberedData {
+  background: #1C243A;
+  text-align: center;
+  padding: 5px 12px;
+  border-radius: 10px;
+}
+
+.stats__column__title {
+  color: #7C818E;
+}
+
+.stats__column__numberedData > div {
+  padding: 5px 0;
+}
+
+.stats__secondColumn {
+  text-align: center;
+  margin: 0px 44px;
+  font-size: 13px;
+}
+
+.stats__secondColumn > div {
+  padding: 6px 4px;
+}

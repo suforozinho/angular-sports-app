@@ -1,0 +1,106 @@
+<div class="content__sidebar__div">
+  <div class="content__sidebar" *ngIf="!leaguesSidebarIsOpen">
+    <div class="content__open-another-window" (click)="openCloseLeagueSidebar()">
+      <img src="../assets/open-new-window-grey.png" alt="new window">
+    </div>
+    <ul>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league1')">
+        <img src="../assets/lion-transparent.png" [class.active-league]="activeLeague === 'league1'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league2')">
+        <img src="../assets/libertadores-transparent.png" [class.active-league]="activeLeague === 'league2'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league3')">
+        <img src="../assets/bundesliga-transparent.png" [class.active-league]="activeLeague === 'league3'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league4')">
+        <img src="../assets/uefa-champions-transparent.png" [class.active-league]="activeLeague === 'league4'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league5')">
+        <img src="../assets/lion-transparent.png" [class.active-league]="activeLeague === 'league5'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league6')">
+        <img src="../assets/libertadores-transparent.png" [class.active-league]="activeLeague === 'league6'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league7')">
+        <img src="../assets/bundesliga-transparent.png" [class.active-league]="activeLeague === 'league7'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league8')">
+        <img src="../assets/uefa-champions-transparent.png" [class.active-league]="activeLeague === 'league8'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league9')">
+        <img src="../assets/lion-transparent.png" [class.active-league]="activeLeague === 'league9'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league10')">
+        <img src="../assets/libertadores-transparent.png" [class.active-league]="activeLeague === 'league10'" alt="">
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league11')">
+        <img src="../assets/bundesliga-transparent.png" [class.active-league]="activeLeague === 'league11'" alt="">
+      </li>
+    </ul>
+  </div>
+  <div class="content__sidebar content__sidebar__open" *ngIf="leaguesSidebarIsOpen">
+    <div class="content__sidebar__current-league">
+      <div class="content__open-another-window__icon-div">
+        <img src="../assets/x-icon-grey.png" alt="close" (click)="openCloseLeagueSidebar()">
+      </div>
+      <div class="content__sidebar__current-league__div">
+        <img src="../assets/lion-transparent.png" alt="lion league">
+        Premiere League
+        <button>Ver mais</button>
+      </div>
+    </div>
+    <div class="content__sidebar__nav">
+      <div [class.extra-info-tab-active]="leaguesNavbarSection === 'ligas'" (click)="changeLeaguesNavbarSection('ligas')">Ligas</div>
+      <div [class.extra-info-tab-active]="leaguesNavbarSection === 'paises'" (click)="changeLeaguesNavbarSection('paises')">Países</div>
+      <div [class.extra-info-tab-active]="leaguesNavbarSection === 'times'" (click)="changeLeaguesNavbarSection('times')">Times</div>
+      <div [class.extra-info-tab-active]="leaguesNavbarSection === 'data'" (click)="changeLeaguesNavbarSection('data')">Data</div>
+    </div>
+    <ul>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league1')">
+        <img src="../assets/lion-transparent.png" [class.active-league]="activeLeague === 'league1'" alt="">
+        Premiere League
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league2')">
+        <img src="../assets/libertadores-transparent.png" [class.active-league]="activeLeague === 'league2'" alt="">
+        Libertadores
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league3')">
+        <img src="../assets/bundesliga-transparent.png" [class.active-league]="activeLeague === 'league3'" alt="">
+        Budesliga
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league4')">
+        <img src="../assets/uefa-champions-transparent.png" [class.active-league]="activeLeague === 'league4'" alt="">
+        UEFA Champions League
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league5')">
+        <img src="../assets/lion-transparent.png" [class.active-league]="activeLeague === 'league5'" alt="">
+        Premiere League
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league6')">
+        <img src="../assets/libertadores-transparent.png" [class.active-league]="activeLeague === 'league6'" alt="">
+        Libertadores
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league7')">
+        <img src="../assets/bundesliga-transparent.png" [class.active-league]="activeLeague === 'league7'" alt="">
+        Budesliga
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league8')">
+        <img src="../assets/uefa-champions-transparent.png" [class.active-league]="activeLeague === 'league8'" alt="">
+        UEFA Champions League
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league9')">
+        <img src="../assets/lion-transparent.png" [class.active-league]="activeLeague === 'league9'" alt="">
+        Premiere League
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league10')">
+        <img src="../assets/libertadores-transparent.png" [class.active-league]="activeLeague === 'league10'" alt="">
+        Libertadores
+      </li>
+      <li class="content__sidebar__item"  (click)="changeLeagueActive('league11')">
+        <img src="../assets/bundesliga-transparent.png" [class.active-league]="activeLeague === 'league11'" alt="">
+        Budesliga
+      </li>
+    </ul>
+  </div>
+</div>

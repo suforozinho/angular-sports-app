@@ -1,0 +1,55 @@
+.topbar {
+  background: #0A0F1E;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 23px;
+}
+
+.topbar__app-name {
+  padding: 13px 0;
+  padding-left: 13px;
+  border-left: 2px solid #C76B04;
+}
+
+.topbar__search {
+  display: flex;
+}
+
+.topbar__search > input {
+  background: #1B202E;
+  border: 0;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  font-size: 16px;
+  width: 468px;
+  padding: 6px 22px;
+}
+
+.topbar__search__searchIcon {
+  background: #1B202E;
+  display: flex;
+  align-items: center;
+  padding-right: 9px;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+
+.topbar__search__searchIcon__icon {
+  width: 18px;
+}
+
+.topbar__user {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__user__settings {
+  margin: 0 27px;
+  padding: 13px 10px;
+  border-radius: 50%;
+  background: #252227;
+  color: #EB8F26;
+  font-weight: 700;
+}

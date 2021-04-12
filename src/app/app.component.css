@@ -1,0 +1,203 @@
+.container {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+.active-league {
+  border: 2px solid #EB8F26;
+  border-radius: 50%;
+}
+
+.content__info {
+  width: 60%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content__info::-webkit-scrollbar {
+  background: transparent;
+  width: 16px;
+}
+
+.content__info::-webkit-scrollbar-thumb {
+  background: #b1b1b1;
+  border: 5px solid #fff;
+  border-radius: 16px;
+}
+
+.content__info::-webkit-scrollbar-track {
+  border-radius: 16px;
+}
+
+.content__info.extra-info-is-hidden {
+  width: 100%;
+}
+
+.content__info__tabs {
+  display: flex;
+  background: #E8E8E8;
+  padding-top: 20px;
+  padding-left: 31px;
+}
+
+.content__info__tabs__tab {
+  background: #F3F3F3;
+  margin-left: 9px;
+  min-width: 169px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__info__tabs__tab:hover {
+  cursor: pointer;
+}
+
+.content__info__tabs__tab.active-tab {
+  background: #fff;
+}
+
+.content__info__tabs__tab__image {
+  width: 14px;
+  margin-right: 7px;
+}
+
+.content__info__main__header {
+  display: flex;
+  padding: 23px;
+  padding-left: 108px;
+  justify-content: space-between;
+  color: #818181;
+  padding-right: 117px;
+}
+
+.header__sport-title {
+  display: flex;
+  align-items: center;
+}
+
+.header__sport-title > img {
+  width: 40px;
+  height: 40px;
+}
+
+.orange-line {
+  width: 2px;
+  height: 26px;
+  background: #E87C00;
+  margin-left: 12px;
+  border-radius: 20px;
+}
+
+.header__sport-title__div {
+  margin-left: 12px;
+}
+
+.header__sport-title__div > h2 {
+  margin: 0;
+}
+
+.header__games-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__games-total > span:first-child {
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.header__games-total__total {
+  color: white;
+  background: #EB8F26;
+  padding: 10px 17px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.content__info__main__tabs {
+  display: flex;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  color: #c3c3c3;
+}
+
+.content__info__main__tabs > div {
+  margin-left: 64px;
+  padding: 20px 0;
+}
+
+.content__info__main__tabs > div:hover {
+  cursor: pointer;
+}
+
+.content__info__main__tabs > div.info-active-tab {
+  color: gray;
+  border-bottom: 3px solid #E87C00;
+}
+
+.league__header {
+  display: flex;
+  padding: 20px 60px;
+  background: #FCFCFC;
+}
+
+.league__header__image {
+  width: 44px;
+  height: 41px;
+}
+
+.league__header__title-div {
+  margin-left: 14px;
+}
+
+.league__header__title-div > span {
+  font-size: 12px;
+  color: gray;
+}
+
+.league__header__title-div__title {
+  font-weight: 700;
+  color: #797979;
+}
+
+app-match-details {
+  width: 40%;
+  overflow-y: auto;
+  background: #171F36;
+}
+
+app-match-details::-webkit-scrollbar {
+  background: transparent;
+  width: 16px;
+}
+
+app-match-details::-webkit-scrollbar-thumb {
+  background: #6d6d6d;
+  border: 5px solid #121830;
+  border-radius: 16px;
+}
+
+app-match-details::-webkit-scrollbar-track {
+  border-radius: 16px;
+}

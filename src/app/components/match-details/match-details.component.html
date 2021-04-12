@@ -1,0 +1,112 @@
+<div class="content__extra-info">
+  <div class="content__extra-info__top">
+    <div class="content__extra-info__top__close-and-swap">
+      <img class="close-button" (click)="close()" src="../assets/x-icon-grey.png" alt="close"> <!-- close button -->
+      <div class="swap-button">
+        <img src="../assets/swap-icon-white.png" alt="change team image">
+      </div>
+    </div>
+    <div class="content__extra-info__top__teams-score">
+      <div class="teams-score__team">
+        <img src="../assets/barcelona-logo.png" alt="barcelona logo">
+      </div>
+      <div class="teams-score__score">
+        2
+        <div class="some-number">92</div>
+        1
+      </div>
+      <div class="teams-score__team">
+        <img src="../assets/real-madrid-logo.png" alt="real madrid logo">
+      </div>
+    </div>
+    <div class="content__extra-info__top__teams-name">
+      <div class="team-name">BARCELONA</div>
+      <div class="team-name-x">X</div>
+      <div class="team-name">REAL MADRID</div>
+    </div>
+    <div class="content__extra-info__top__stadium-league">
+      <div class="stadium-league__stadium">Estádio Santiago Bernabeu</div>
+      <div class="stadium-league__league">UEFA - Liga do Campeões</div>
+    </div>
+  </div>
+  <div class="content__extra-info__bottom">
+    <div class="content__extra-info__bottom__navbar">
+      <div (click)="changeExtraInfoTabActive('match')" [class.extra-info-tab-active]="extraInfoTabActive === 'match'">Match</div>
+      <div (click)="changeExtraInfoTabActive('charts')" [class.extra-info-tab-active]="extraInfoTabActive === 'charts'">Charts</div>
+      <div (click)="changeExtraInfoTabActive('historico')" [class.extra-info-tab-active]="extraInfoTabActive === 'historico'">Histórico</div>
+      <div (click)="changeExtraInfoTabActive('odd')" [class.extra-info-tab-active]="extraInfoTabActive === 'odd'">ODD</div>
+      <div (click)="changeExtraInfoTabActive('tabela')" [class.extra-info-tab-active]="extraInfoTabActive === 'tabela'">Tabela</div>
+    </div>
+    <div class="content__extra-info__bottom__stats">
+      <div class="stats__column">
+        <div class="stats__column__numberedData">
+          <div class="stats__column__title">
+            LT Minsk
+          </div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">38</div>
+          <div class="stats__column__element">68</div>
+          <div class="stats__column__element">88</div>
+          <div class="stats__column__element">32</div>
+          <div class="stats__column__element">55</div>
+        </div>
+        <!-- <div class="stats__column__coloredData">
+          38 <div class="stats__column__coloredData__green"></div>
+          68 <div class="stats__column__coloredData__green"></div>
+          88 <div class="stats__column__coloredData__red"></div>
+          32 <div class="stats__column__coloredData__purple"></div>
+          55 <div class="stats__column__coloredData__orange"></div>
+        </div> -->
+      </div>
+      <div class="stats__secondColumn">
+        <div>Golos</div>
+        <div>Carners</div>
+        <div>Carners (Half)</div>
+        <div>Amarelo</div>
+        <div>Cartões Amarelo/Vermelho</div>
+        <div>Cartões Vermelho</div>
+        <div>Penalizaçãoes</div>
+        <div>Bolas seguras</div>
+        <div>Substituições</div>
+        <div>Ataques</div>
+        <div>Ataques Perigosos</div>
+        <div>À Baliza</div>
+        <div>Ao Lado</div>
+      </div>
+      <div class="stats__column">
+        <div class="stats__column__numberedData">
+          <div class="stats__column__title">
+            LT Minsk
+          </div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">0</div>
+          <div class="stats__column__element">5</div>
+          <div class="stats__column__element">38</div>
+          <div class="stats__column__element">68</div>
+          <div class="stats__column__element">88</div>
+          <div class="stats__column__element">32</div>
+          <div class="stats__column__element">55</div>
+        </div>
+        <!-- <div class="stats__column__coloredData">
+          <div class="stats__column__coloredData__green"></div> 38
+          <div class="stats__column__coloredData__green"></div> 68
+          <div class="stats__column__coloredData__red"></div> 88
+          <div class="stats__column__coloredData__purple"></div> 32
+          <div class="stats__column__coloredData__orange"></div> 55
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

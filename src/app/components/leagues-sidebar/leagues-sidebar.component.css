@@ -1,0 +1,146 @@
+.content__sidebar__div {
+  height: 100%;
+  overflow-y: auto;
+  background-color: #121830;
+}
+
+.content__sidebar {
+  background-color: #121830;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  padding-top: 26px;
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+
+.content__sidebar__div::-webkit-scrollbar {
+  background: transparent;
+  width: 16px;
+}
+
+.content__sidebar__div::-webkit-scrollbar-thumb {
+  background: #6d6d6d;
+  border: 5px solid #121830;
+  border-radius: 16px;
+}
+
+.content__sidebar__div::-webkit-scrollbar-track {
+  border-radius: 16px;
+}
+
+.content__sidebar__open {
+  width: 363px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.content__sidebar > ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 55px;
+  width: 100%;
+}
+
+.content__sidebar__item {
+  list-style-type: none;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  color: #4F5A7E;
+}
+
+.content__sidebar__open > .content__open-another-window {
+  width: 100%;
+}
+
+.content__open-another-window__icon-div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 19px;
+}
+
+.content__open-another-window__icon-div > img {
+  width: 23px;
+}
+
+.content__open-another-window__icon-div > img:hover {
+  cursor: pointer;
+}
+
+.content__sidebar__current-league {
+  width: 100%;
+}
+
+.content__sidebar__current-league__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.content__sidebar__current-league__div > img {
+  width: 82px;
+  margin-bottom: 11px;
+}
+
+.content__sidebar__current-league__div > button {
+  background: #EB8F26;
+  border: 0;
+  border-radius: 22px;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: white;
+  margin-top: 8px;
+}
+
+.content__sidebar__nav {
+  margin-top: 55px;
+  color: #1C2548;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content__sidebar__nav > div {
+  padding: 15px;
+}
+
+.content__sidebar__nav > div:hover {
+  cursor: pointer;
+}
+
+.content__sidebar__open > ul {
+  margin-top: 0;
+}
+
+.content__sidebar__open > ul > .content__sidebar__item{
+  margin-bottom: 0;
+  justify-content: flex-start;
+  padding: 12px 22px;
+  border-top: 1px solid #1C2548;
+}
+
+.content__sidebar__open > ul > .content__sidebar__item > img {
+  margin-right: 16px;
+}
+
+.content__sidebar__item:hover {
+  cursor: pointer;
+}
+
+.content__sidebar__item > img {
+  width: 43px;
+}
+
+.content__open-another-window > img {
+  width: 19px;
+}
+
+.content__open-another-window:hover {
+  cursor: pointer;
+}

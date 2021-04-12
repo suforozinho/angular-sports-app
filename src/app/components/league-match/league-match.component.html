@@ -1,0 +1,28 @@
+<div class="league-match-list__match">
+  <div class="match__some-number">
+    45
+  </div>
+  <div class="match__teams">
+    <div class="match__teams__team1">
+      Real Madrid
+      <img class="match__teams__teamImage" src="../assets/real-madrid-logo.png" alt="#">
+    </div>
+    <div class="match__teams__goals">
+      2:1
+    </div>
+    <div class="match__teams__team2">
+      <img class="match__teams__teamImage" src="../assets/barcelona-logo.png" alt="#">
+      Barcelona
+    </div>
+  </div>
+  <div class="match__date">
+    08/07 14:30
+  </div>
+  <div class="match__favorite">
+    <img src="../assets/bookmark-icon.png" *ngIf="!bookmarkMatches.match1" (click)="bookmarkMatch('match1')" alt="bookmark-icon">
+    <img src="../assets/bookmark-icon-green.png" *ngIf="bookmarkMatches.match1" (click)="bookmarkMatch('match1')" alt="bookmark-icon">
+  </div>
+  <div (click)="viewMore()" class="match__view-more">
+    <img src="../assets/view.png" alt="view match details">
+  </div>
+</div>
